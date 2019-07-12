@@ -22,14 +22,14 @@ Selectize.define('dropdown_header', function(options) {
 		headerClass   : 'selectize-dropdown-header',
 		titleRowClass : 'selectize-dropdown-header-title',
 		labelClass    : 'selectize-dropdown-header-label',
-		closeClass    : 'selectize-dropdown-header-close',
+		closeClass    : 'selectize-dropdown-header-close pointer',
 
 		html: function(data) {
 			return (
 				'<div class="' + data.headerClass + '">' +
 					'<div class="' + data.titleRowClass + '">' +
 						'<span class="' + data.labelClass + '">' + data.title + '</span>' +
-						'<a href="javascript:void(0)" class="' + data.closeClass + '">&times;</a>' +
+						'<a class="' + data.closeClass + '">&times;</a>' +
 					'</div>' +
 				'</div>'
 			);
